@@ -82,7 +82,7 @@ personForm.addEventListener("submit", event => {
     if(!name) return
 
     people.push(name)
-    peopleInput.value=""
+    personInput.value=""
 
     render()
 })
