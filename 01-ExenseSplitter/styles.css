@@ -8,7 +8,7 @@ body
     min-height: 100vh;
     display: grid;
     place-items: center;
-    padding: 23px;
+    padding: 24px;
     font-family: system-ui, sans-serif;
     background: #eef2ff;
     color: #1f2937;
@@ -24,7 +24,7 @@ body
 }
 
 .top p {
-    margin 4px 0 0;
+    margin: 4px 0 0;
     opacity: 0.7;
 }
 
@@ -73,7 +73,7 @@ section h3 {
 }
 
 .list {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
