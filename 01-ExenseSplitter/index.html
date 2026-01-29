@@ -22,41 +22,36 @@
             <input id="descInput" type="text" placeholder="Expense Description" />
             <input id="amountInput" type="number" placeholder="Amount" />
             <select id="paidBySelect">
-                <option value="John"></option>
-                <option value="Carlos">Carlos</option>
             </select>
             <button>Add Expense</button>
         </form>
+
         <section>
             <h3>People</h3>
-            <ul class="list">
-                <li>John</li>
-                <li>Carlos</li>
+            <ul id="peopleList" class="list">
             </ul>
         </section>
 
         <section>
             <h3>Expenses</h3>
-            <ul class="list">
-                <li>Sodas - $10 Paid by Carlos</li>
+            <ul id="expenseList" class="list">
             </ul>
         </section>
 
         <section>
             <h3>Total</h3>
             <p>
-                Total Spent: <strong>$10.00</strong><br/>
-                Split Per Person: <strong>$5.00</strong>
+                Total Spent: <strong id="totalSpent">$0.00</strong><br/>
+                Split Per Person: <strong id="splitAmount">$0.00</strong>
             </p>
         </section>
 
         <section class="summary">
             <h3>Summary</h3>
-            <ul class="list">
-                <li>John owes $5.00</li>
-                <li>Carlos gets $5.00</li>
+            <ul id="summaryList" class="list">
             </ul>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
