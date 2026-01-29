@@ -10,7 +10,7 @@ const paidBySelect = document.getElementById("paidBySelect")
 
 const totalSpent = document.getElementById("totalSpent")
 const splitAmount = document.getElementById("splitAmount")
-const summaryList = document.getElementById("SummaryList")
+const summaryList = document.getElementById("summaryList")
 
 const people = []
 const expenses = []
