@@ -36,7 +36,7 @@ const render = () => {
     expenseList.innerHTML = " "
     expenses.forEach( expense => {
         const li = document.createElement("li")
-        li.textContent = "${expense.desc} - $${expense.amount.toFixed(2)} Paid by ${expense.paidBy}"
+        li.textContent = `${expense.desc} - $${expense.amount.toFixed(2)} Paid by ${expense.paidBy}`
         expenseList.appendChild(li)
     })
 
@@ -47,16 +47,16 @@ const renderSummary = () => {
     summaryList.innerHTML = ""
 
     if(people.length === 0){
-        totalSpent.textContent = "$0.00"
-        splitAmount.textContent = "$0.00"
+        totalSpent.textContent = `$0.00`
+        splitAmount.textContent = `$0.00`
         return
     }
 
     const total = expenses.reduce((sum, exp) => sum + exp.amount, 0)
     const share = total / people.length
     
-    totalSpent.textContent = "$${total.toFixed(2)}"
-    splitAmount.textContent = "$${share.toFixed(2)}"
+    totalSpent.textContent = `$${total.toFixed(2)}`
+    splitAmount.textContent = `$${share.toFixed(2)}`
 
     people.forEach(person => {
         const paid = expenses.filter(exp => exp.paidBy === person).reduce((sum, exp) => sum + exp.amount, 0)
@@ -66,8 +66,8 @@ const renderSummary = () => {
         const li = document.createElement("li")
         li.textContent = 
             balance >= 0
-                ? "${person} gets $${balance.toFixed(2)}"
-                : "${person} owes $${Math.abs(balance.toFixed(2))}"
+                ? `${person} gets $${balance.toFixed(2)}`
+                : `${person} owes $${Math.abs(balance).toFixed(2)}`
         
         summaryList.appendChild(li)
     })
