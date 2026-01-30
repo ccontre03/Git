@@ -10,8 +10,8 @@ body
     place-items: center;
     padding: 24px;
     font-family: system-ui, sans-serif;
-    background: #eef2ff;
-    color: #1f2937;
+    background: #0e9c2f;
+    color: #8f0904;
 }
 
 .top {
@@ -30,7 +30,7 @@ body
 
 .card {
     width: min(600px, 100%);
-    background: #fff;
+    background: #c60a87;
     padding: 18px;
     border-radius: 16px;
     box-shadow: 0 10px 24px rgba(79, 70, 229, .2);
@@ -47,15 +47,15 @@ input, select {
     flex: 1;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #c7d2fe;
+    border: 1px solid #34025e;
 }
 
 button {
     padding: 10px 14px;
     border-radius: 10px;
     border: none;
-    background: #4f46e5;
-    color: #fff;
+    background: #09b89b;
+    color: #774ab8;
     cursor: pointer;
 
 
@@ -69,7 +69,7 @@ section {
 section h3 {
     margin: 0 0 6px;
     font-size: 14px;
-    color: #4f46e5;
+    color: #8b1349;
 }
 
 .list {
