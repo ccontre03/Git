@@ -133,7 +133,7 @@ button {
     padding: 10px 14px;
     border-radius: 10px;
     border: none;
-    background: #09b89b;
+    background: #e10808;
     color: #774ab8;
     cursor: pointer;
 }
@@ -155,6 +155,6 @@ button {
 
 #summaryList li {
     background: #dcfce7;
-    color: #166534;
+    color: #040009;
 }
 </style>
