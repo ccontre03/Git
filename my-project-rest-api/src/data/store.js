@@ -69,7 +69,7 @@ export function updateProject(id, input) {
     updated_at: nowIso(),
   }
 
-   projects[index] = updated
+  projects[index] = updated
   return clone(updated)
 }
 
@@ -77,7 +77,7 @@ export function deleteProject(id) {
   const startSize = projects.length
   projects = projects.filter((item) => item.id !== id)
 
-    if (projects.length === startSize) {
+  if (projects.length === startSize) {
     return false
   }
 
