@@ -3,7 +3,6 @@ import projects from './routes/projects.js'
 import { isApiError } from './utils/errors.js'
 import { sendError } from './utils/response.js'
 
-
 const app = new Hono()
 const api = new Hono()
 
