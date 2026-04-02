@@ -3,13 +3,14 @@
 	"name": "my-projects-rest-api",
 	"main": "src/index.js",
 	"compatibility_date": "2026-03-13",
-	"d1_databases": [
-		{
-			"binding": "DB",
-			"database_name": "project_db",
-			"database_id": "762d1d4a-e9d7-4f94-bee4-0a6c64e4b44c"
-		}
-	]
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "projects_db",
+      "database_id": "a6d37d02-6ed5-42d4-86d6-ca5f738d786b",
+      "migrations_dir": "./src/data/migrations",
+    },
+  ],
 	// "compatibility_flags": [
 	//   "nodejs_compat"
 	// ],
