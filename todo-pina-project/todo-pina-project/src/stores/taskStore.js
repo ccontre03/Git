@@ -20,4 +20,15 @@ export const useTaskStore = defineStore('taskStore', {
       },
     ],
   }),
+
+  getters: {
+    pendingTasks: (state) => state.tasks.filter((task) => task.status === 'pending'),
+
+    completedTasks: (state) => state.tasks.filter((task) => task.status === 'completed'),
+
+    tomorrowTasks: (state) => state.tasks.filter((task) => task.status === 'tomorrow'),
+
+    totalTasks: (state) => state.tasks.length,
+  },
 })
+
