@@ -60,6 +60,11 @@ const taskStore = useTaskStore()
   border: 1px solid #dcdcdc;
   border-radius: 8px;
   padding: 1rem;
+  color: #222222;
+}
+
+h2 {
+  color: #222222;
 }
 
 ul {
@@ -79,6 +84,10 @@ li {
 
 li:last-child {
   border-bottom: none;
+}
+
+li span {
+  color: #222222;
 }
 
 .button-group {

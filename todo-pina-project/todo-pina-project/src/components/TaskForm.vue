@@ -33,6 +33,11 @@ const submitTask = () => {
   border-radius: 8px;
   margin-bottom: 1.5rem;
   border: 1px solid #dcdcdc;
+  color: #222222;
+}
+
+h2 {
+  color: #222222;
 }
 
 .form-row {
@@ -46,6 +51,8 @@ input {
   padding: 0.75rem;
   border: 1px solid #bbbbbb;
   border-radius: 6px;
+  background: #ffffff;
+  color: #222222;
 }
 
 button {
