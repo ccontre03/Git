@@ -39,6 +39,7 @@ const taskStore = useTaskStore()
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1.5rem;
+  color: #222222;
 }
 
 .summary-grid {
@@ -53,6 +54,12 @@ const taskStore = useTaskStore()
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
+}
+
+h2,
+h3,
+p {
+  color: #222222;
 }
 
 h3 {
