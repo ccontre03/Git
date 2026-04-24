@@ -20,16 +20,18 @@ import TaskSummary from './components/TaskSummary.vue'
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
+  color: #222222;
 }
 
 h1 {
   margin-bottom: 0.5rem;
   text-align: center;
+  color: #111111;
 }
 
 .subtitle {
   text-align: center;
-  color: #666666;
+  color: #333333;
   margin-bottom: 2rem;
 }
 </style>
