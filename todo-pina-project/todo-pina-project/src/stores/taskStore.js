@@ -30,5 +30,30 @@ export const useTaskStore = defineStore('taskStore', {
 
     totalTasks: (state) => state.tasks.length,
   },
-})
 
+  actions: {
+    addTask(taskText) {
+      this.tasks.push({
+        id: Date.now(),
+        text: taskText,
+        status: 'pending',
+      })
+    },
+
+    markCompleted(taskId) {
+      const task = this.tasks.find((task) => task.id === taskId)
+
+      if (task) {
+        task.status = 'completed'
+      }
+    },
+
+    moveToTomorrow(taskId) {
+      const task = this.tasks.find((task) => task.id === taskId)
+
+      if (task) {
+        task.status = 'tomorrow'
+      }
+    },
+  },
+})
